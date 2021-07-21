@@ -1,0 +1,100 @@
+<html>
+<head>
+ 
+   <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+  <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+ <link rel="stylesheet" href="style.css">
+
+</head>
+ 
+<body>
+  
+  <section class="container-fluid">
+   
+    <section class="row justify-content-center">
+      <section class="col-12 col-sm-6 col-md-4">
+        <form class="form-container" onsubmit="Data(event)" action="details.html" target="_blank" method="post">
+          
+        <div class="form-group">
+          <h4 class="text-center font-weight-bold"> Job Portal </h4>
+          <label for="req_name" class="font-weight-bold">Requester Name</label>
+           <input type="text" class="form-control" id="req_name" name="req_name"  placeholder="Enter Name" required>
+        </div>
+        <div class="form-group">
+           <label for="jobid" class="font-weight-bold">Job ID</label>
+           <input type="text" class="form-control" name="jobid" id="jobid" placeholder="Enter Job Id" required>
+        </div>
+        <div class="form-group">
+          <label for="date"class="font-weight-bold">Posting Date</label>
+          <input type="date" class="form-control" id="date" name="date" required></input> 
+          </div>
+        <div class="form-group">
+          <label for="Position_title" class="font-weight-bold">Position Title</label>
+          <input type="text" class="form-control" id="Position_title" name="Position_title" placeholder="Position Title" required></input> 
+          </div>
+        <div class="form-group">
+          <label for="role" class="font-weight-bold">Role</label>
+          <textarea type="text" class="form-control" id="role" placeholder="role" name="role" rows="4" cols="5" required></textarea> 
+          </div>
+          <div class="form-group">
+          <label for="responsibility" class="font-weight-bold">Responsibilities</label>
+          <textarea type="text" class="form-control" id="responsibility" name="responsibility" placeholder="Responsibilities" rows="4" cols="5" required></textarea> 
+          </div>
+          <div class="form-group">
+  <label for="Location" class="font-weight-bold">Location:</label>
+  <select class="form-control" id="Location" name="Location" required>
+    <option>Hyderbad</option>
+    <option>Banglore</option>
+    <option>Chennai</option>
+    <option>Mumbai</option>
+  </select>
+</div>
+      <div class="row" >   
+        <div class="form-group col-sm-6">
+            <label class="font-weight-bold">Position Type</label>
+            <label class="d-block" >
+                <input type="radio" class="mr-1" name="position_type" id="position_type"  > Permanent
+            </label>
+            <label class="d-block">
+                <input type="radio" class="mr-1" name="position_type" id="position_type" > Part-time
+            </label>
+          </div>
+          <div class="form-group col-sm-6">
+             <label class="font-weight-bold">Posting Type</label>
+            <label class="d-block">
+                <input type="radio" class="mr-1" name="posting_type" id="posting_type"> Internal
+            </label>
+            <label class="d-block">
+                <input type="radio" class="mr-1" name="posting_type" id="posting_type"> External
+            </label>
+        </div>
+      </div>
+        <div class="col-sm-10 col-md-6 col-lg-12 offset-1 " class=".button">
+
+        <button type="submit" class="btn btn-success">Post</a></button>
+        <button type="clear" class="btn btn-primary ">Clear</button>
+        <button type="reset" class="btn btn-danger ">Reset</button>
+        <!-- <button type="submit" class="btn btn-danger" ><a href="details.html">Get Data</a></button> -->
+        </div>
+
+        <a class="footer" href="details.html">view Job Postings</a>
+        
+        </form>
+
+       
+            
+</div>
+      </section>
+    </section>
+  </section>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script type="text/javascript" src="script.js"></script>
+</html>

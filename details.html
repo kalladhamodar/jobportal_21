@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>details</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <h1>Details</h1>
+    <section class="container-fluid">
+      <section class="row"></section>
+    </section>
+  </body>
+
+  <script type="text/javascript">
+    function dispData() {
+      for (var i = 0; i < localStorage.length; i++) {
+        var key = localStorage.key(i);
+        var value = localStorage.getItem(key);
+        let {
+          jobid,
+          req_name,
+          date,
+          posting_type,
+          position_type,
+          Position_title,
+          role,
+          responsibility,
+          Location,
+        } = JSON.parse(localStorage.getItem(key, value));
+
+        var jobPosting = `
+        <div class="col-md-4">
+          <div class="post-container">
+            <div class="job-poster">
+              <span class="posted-date"
+                ><i class="fa fa-calendar" aria-hidden="true"></i>
+                ${date}</span
+              >
+              <h2 class="job-role">${role}</h2>
+              <p class="res">${responsibility}</p>
+              <p class="position_type">${position_type}</p>
+              <p class="position_type">${posting_type}</p>
+              <div class="rec-details">
+                <span>Rec Name: ${req_name}</span>
+
+                <span>jobId: ${jobid}</span>
+                <span>
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  ${Location}</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        `;
+        console.log(jobPosting);
+        $(".row").append(jobPosting);
+      }
+    }
+    dispData();
+  </script>
+</html>

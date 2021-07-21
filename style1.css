@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #383a3d;
+  padding-top: 10vh;
+}
+
+h1 {
+  font-size: 34px;
+  padding-left: 2%;
+  color: #fff;
+}
+h2 {
+  color: white;
+}
+
+.post-container {
+  background: cadetblue;
+  color: #fff;
+}
+
+span.posted-date {
+  float: right;
+  font-size: 16px;
+  margin: 5px;
+}
+
+p.res {
+  font-size: 18px;
+}
+.rec-details {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.post-container {
+  background: cadetblue;
+  color: #fff;
+  padding: 2%;
+  border-radius: 8px;
+  margin-bottom: 5%;
+}
+.rec-details span {
+  font-weight: 800;
+}
