@@ -11,11 +11,7 @@ form{
     border-radius: 10px;
     padding: 30px;
 }
-.footer{
-  position: absolute;
-  top: 960px;
-  left: 355px;
-}
+
 button a{
   color: white;
 
